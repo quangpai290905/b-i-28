@@ -1,0 +1,85 @@
+/* Phong cách chung */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Phong cách form căn giữa */
+#videoForm {
+    background-color: #ffe6f0;
+    color: #333;
+    width: 100%;                    /* Chiều rộng được đặt thành 60% của khung nhìn để căn giữa */
+    max-width: 8980px;              /* Chiều rộng tối đa cho màn hình lớn hơn */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Phong cách hiển thị video */
+#videoPreview {
+    width: 100%;
+    max-height: 9000px;             /* Giới hạn chiều cao để phù hợp với ảnh chụp màn hình */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Phong cách nút */
+.btn-primary {
+    background-color: #006EFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #4D7BFF;
+}
+
+/* Phong cách thông tin video */
+h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+#fileSize {
+    font-weight: bold;
+    color: #666;
+}
+
+/* Phong cách văn bản tiến trình */
+#progress {
+    font-size: 16px;
+    color: #A6A6A6;
+    margin-bottom: 15px;
+}
+
+/* Điều chỉnh cho thiết kế đáp ứng */
+@media (max-width: 768px) {
+    #videoForm {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+}
